@@ -7,6 +7,8 @@
 using namespace std;
 
 int main() {
+  srand(time(nullptr));
+  
   while (true) {
     #ifdef _WIN32
     system("cls");
@@ -33,8 +35,6 @@ int main() {
     int win_number = 0;
     int draw_number = 0;
     int lose_number = 0;
-
-    srand(time(nullptr));
 
     for (int i = 0; i < how_many_times; i++) {
       int player_answer = rand() % n;
